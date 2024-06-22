@@ -1,2 +1,334 @@
-# Static-Web-Project
-A simple static website for Convention Center - DOVERA PAVILION showcasing its facilities and services. Built with HTML, CSS, and JavaScript
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css">
+<script language="javascript" type="text/javascript">
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<title>website</title>
+</head>
+
+<body>
+
+<div class="header">
+  <img style="display: inline; background-color:#e9e9e9"; src="images/images/logocreation.png" alt="logo" />
+ 
+
+
+
+  
+  <div class="nav">
+  <a href="index.htm">Home</a>
+  <a href="About US.htm">About Us</a>
+  <a href="Services.htm">Services</a>
+  <a href="Contact Us.htm">Contact Us</a>
+  <div class="search">
+  <form>
+      <input type="text" placeholder="Search.." name="search">
+      <button>Search</button>
+      </form>
+  </div>
+</div>
+
+     </header>
+</div>    
+ 
+   
+ <div class="container">
+  <div class="mySlides">
+    
+    <img src="images/wed3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+   
+    <img src="images/meetng2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    
+    <img src="images/outdooR COURTYARD.JPG" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+   
+    <img src="images/food2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    
+    <img src="images/room2.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    
+    <img src="images/swim pool.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onClick="plusSlides(-1)">❮</a>
+  <a class="next" onClick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/wed3.jpg" style="width:100%" onClick="currentSlide(1)" alt="Wedding">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/meetng2.jpg" style="width:100%" onClick="currentSlide(2)" alt="Meeting">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/outdooR COURTYARD.JPG" style="width:100%" onClick="currentSlide(3)" alt="Courtyard">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/food2.jpg" style="width:100%" onClick="currentSlide(4)" alt="Food">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/room2.jpg" style="width:100%" onClick="currentSlide(5)" alt="Room">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="images/swim pool.jpg" style="width:100%" onClick="currentSlide(6)" alt="Swimming Pool">
+    </div>
+  </div>
+</div><br>
+
+<div class="row1">
+ <h2 style="text-align:center">WEDDING | CONVENTIONS | EXHIBITIONS | EVENTS</h2>
+
+<div class="row2"> 
+<center><h3>Welcome to the best Convention center in Bangalore -<br>
+ Dovera Pavilion is one of the Largest Convention Center set in 7 acres.<br>
+  From Banquets to B2B events, Weddings to Meetings, Conventions, Expos, Concerts, Fashion shows, Seminars, Conferences and even Birthdays.</h3>
+  </center>
+  <div class=text>
+  <center><p class="big">Dovera Pavilion comprises of large and small open and closed spaces that fit every budget. Our Banquet halls can be setup up for any occasions be it wedding, seminars, expos, fairs or any other special events making it the best convention center in Bangalore </p>
+<p class="big">When you're looking for the ultimate attractive, innovative and awe-inspiring destination venue in Bengaluru, it's safe to say that having your event at Dovera Pavilion Convention Centre (DPCC) is the most ideal choice you can make.</p>
+<p class="big">This purpose-built venue has hosted events for local, national and global audiences which range from corporate meets, B2B/B2C exhibitions, seminars, workshops, conferences, concerts, weddings, family get-togethers and more. The scale and flexibility of the venue offers the freedom to design an event that will impress the audience and enhance the stature of your clients.</p>
+<p class="big">Coupled with a skilled and well-equipped technical, catering and support team that will work with you through all the meticulous resolutions, MCC aims to make your special day more than just special. So let us conceptualize and create your event while you can take the liberty to just sit back and celebrate!</p></center>
+</div>
+</div>
+</div>
+
+  
+<hr class="new4">
+  
+  
+  <center><h2><b>Dovera Pavilion</b></h2>One Stop Solution For All Your Events</h2>
+  </center><br><br><br>
+  
+  
+     
+      
+  <center><div class="circle">
+  <div class="text1"><b>7 ACRES PROPERTY</b></div>
+  </div><br></center><br>
+  
+ <center><div class="circle">
+  <div class="text1"><b>1500+ CAR PARKING</b></div>
+  </div><br></center><br><br>
+ 
+  
+  <center><div class="circle">
+  <div class="text1"><b>10000+ <br>SEATINGS</b></div>
+  </div><br></center><br><br>
+  
+    <center><div class="circle">
+  <div class="text1"><b>3 OUTDOOR VENUES</b></div>
+  </div><br></center><br><br>
+  
+      <center><div class="circle">
+  <div class="text1"><b>22 BANQUET HALLS</b></div>
+  </div></center><br><br><br><br>
+  
+    <center><h2><b>RECENT EVENTS</b></h2>
+  </center><br>
+  
+  
+
+<article id="cc-slider">
+  <input checked="checked" name="cc-slider" id="slide1" type="radio">
+  <input name="cc-slider" id="slide2" type="radio">
+  <input name="cc-slider" id="slide3" type="radio">
+  <input name="cc-slider" id="slide4" type="radio">
+  <input name="cc-slider" id="slide5" type="radio">
+  <div id="cc-slides">
+    <div id="overflow">
+      <div class="inner">
+        <article>
+          <div class="cctooltip">
+            <h3>Craft Drinks India<br>
+                20 June 2019–23 June 2019</h3>
+          </div>
+          <img src="images/imgpsh_fullsize_anim-9-1024x576.jpg"> 
+        </article>
+        <article>
+          <div class="cctooltip">
+            <h3>Madura Garments<br>
+               25 Feb 2019–27 Feb 2019</h3>
+          
+          </div>
+          <img src="images/imgpsh_fullsize_anim-11-768x1024.jpg"> </article>
+        <article>
+          <div class="cctooltip">
+            <h3>Honda India<br>
+                10 May 2019– 13 May 2019</h3>
+            
+          </div>
+          <img src="images/imgpsh_fullsize_anim-6-1024x576.jpg"> 
+        </article>
+        
+      </div>
+    </div>
+  </div>
+  <div id="controls">
+    <label for="slide1"></label>
+    <label for="slide2"></label>
+    <label for="slide3"></label>
+  </div>
+</article>
+<br><br><br><br><br><br>
+
+<center><h1><b>Discover Banglore</b></h1></center>
+<div></div>
+<div></div>
+<div class="row3">
+  <div class="column1">
+    <img src="images/Vidhan-Soudha-min.jpg" alt="Snow" style="width:100%;" >
+  </div>
+  <div class="column1">
+    <img src="images/Hanging-Bridge.jpg" alt="Forest" style="width:100%;"  >
+  </div>
+  
+  <div class="column1">
+    <img src="images/Hotel-c1-225x300.jpg" alt="Mountains" style="width:100%;"  >
+  </div>
+
+<div class="text2" align="center" >
+<strong><h2>Discover Bangalore</h2></strong><br><br>
+<h3>Get Away. Food. Stay. Travel. Night Life</h3><br>
+
+<p><pre><h4>Bangalore is the gateway to south India.<br>
+ The city is blessed with excellent weather and<br>
+ a welcoming culture. It's the Silicon Valley of<br>
+ India, known for its world and local cuisine that<br>
+ blends the global and local seamlessly into glocal.</h4></pre></p><br>
+
+<p><pre><h4>The stately Vidhana Soudha is the state's<br>
+ seat of power. An easy going city that wears a<br>
+ good attitude on its sleeve even as it welcomes<br>
+ the whole world to set up home here.</h4></pre></p><br>
+
+<p><pre><h4>A culturally vibrant city with ancient<br>
+ temples and musical genius in its bustling <br>
+ midst, it  is also ranked at the top of the<br>
+ world as a Startup city. One world, many<br>
+ splendours as the Karnataka Tourism logo<br>
+ proudly states. Dovera Pavilion is all of these and more.</h4></pre></p>
+
+
+</div>
+</div>
+
+
+  <div class="row4">
+  <div></div>
+  <div class="column2 side">
+    <center><h2>Working Hours</h2></center>
+    <center><h5>Monday – Saturday 9am – 6pm</h5></center><br>
+    <center><h5>Sunday Holiday</h5></center><br>
+    <center><h3><p>ADDRESS:</p></h3></center>
+   <center> <h5><p>#90/C, Service Road, Veeranna Palya, Bengaluru,<br>
+           Karnataka-560045, India.</p></h5><br>
+           <br></center>
+           <center><h3><p>PHONE NUMBERS</p></h3></center>
+           <center><h5><p>The Main Office: (925) 246-1880</p></h5></center>
+            <center><h5><p>Summer Camps / Science Fair Questions (Janice) : (925) 890-2624</p></h5></center>
+  </div>
+  
+  
+  
+  <div class="column3 middle">
+     
+  <form action="/action_page.js" class="container2" method="get" >
+    <center><h1>GET IN TOUCH</h1></center>
+    
+    <label for="name"><b>Name</b></label><br>
+    <input type="text" placeholder="Enter Name" name="name" required><br>
+    
+    <label for="phn"><b>Contact Number</b></label><br>
+    <input type="text" placeholder="Contact Number" name="phn" required><br>
+    
+    <label for="sbjct"><b>Subject</b></label><br>
+    <input type="text" placeholder="Subject" name="sbjct" required><br>
+
+    <label for="email"><b>Email</b></label><br>
+    <input type="text" placeholder="Enter Email" name="email" required><br>
+    
+    <label for="subject">Message</label><br>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea><br>
+    
+    <button class="btn success">Submit</button>
+    <button class="btn success">Reset</button>
+  
+  </form>
+
+  
+  
+    </div></div>
+    
+     
+   <div class="fixed-footer">
+        <div class="container3">
+       <p style="padding-left:30px;"> ADDRESS<br>
+Dovera Pavilion<br>
+#90/C, Service Road  <br>
+Veeranna Palya,Bengaluru<br>
+
+Karnataka-560045, India.<br>
+
+Phone : 0483 2691600<br>
+Mobile : +91 +91 9481 00 00 56<br></p>
+
+<p align="right" style="padding-right:30px;">ELSEWHERE<br><br><br>
+<a href="https://www.facebook.com" class="fa fa-facebook">f</a>
+<a href="https://twitter.com" class="fa fa-twitter">t</a>
+<a href="https://www.gmail.com" class="fa fa-google">g</a>
+<a href="https://in.linkedin.com" class="fa fa-linkedin">in</a></p>
+
+
+
+        <center>© Copyright 2015. All Rights Reserved. Powered by Dovera Pavilion Pvt. Ltd</center></div>        
+    </div>   
+
+</body>
+</html>
