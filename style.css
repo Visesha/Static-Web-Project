@@ -1,0 +1,1123 @@
+.body {
+  background-color: #F5F5F5;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: karla, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 0;	 
+  padding-right: 15px;
+  padding-left: 15px; 
+}
+.header {
+	background-color: #e9e9e9;
+}
+
+.header img {
+  float: left;
+   height: 15%;
+    width: 18%;
+	top:20px;
+	padding-left:30px;
+	padding-bottom:10px;
+  background-color: #e9e9e9;
+}
+
+.header h1 {
+  display: inline;
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+ 
+.nav {
+  overflow: hidden;
+    width: 100%;
+    height: 49px;
+  background-color: #e9e9e9;
+}
+
+.nav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 18px;
+  text-decoration: none;
+  font-size: 17px;
+ transition: 0.6s all;
+}
+
+.nav a:hover {
+  background-color: #2196F3 ;
+  color: white;
+}
+
+.nav .search {
+    float: right;
+}
+
+.nav input[type=text] {
+	
+    padding: 6px;
+	
+    margin-top: 8px;
+
+    border:none;
+
+    font-size: 17px;
+}
+
+.nav .search button {
+
+    float: right;
+
+    padding: 6px;
+
+    margin-top: 8px;
+
+    font-size: 17px;
+
+    margin-right: 16px;
+
+    border:none;
+
+    background-color: #2196F3;
+
+    cursor: pointer;
+
+    transition: 0.6s all;
+}
+
+.nav .search button:hover{
+
+    background-color: #ccc;
+
+    color: #fff;
+}
+
+.img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.row1 {
+  float: none;
+  padding: 10px;
+  position: center;
+  text-align: left-side;
+  font-size: 140%;
+  font-family: Palatino Linotype;
+  line-height: 200%;
+  line-height:2.8;
+}
+
+.row2 {
+  float: none;
+  padding: 10px;
+  position: center;
+  text-align: left-side;
+  font-family: arial;
+  line-height: 100%;
+  line-height:2.8;
+}
+
+.text {
+	text-align: justify;
+}
+
+.p .big {
+	font-size:20%;
+	font-family: Times, Times New Roman, Georgia, serif;
+	line-height: 0.8px;
+}
+
+hr.new4 {
+  border: 1px solid black;
+}
+
+.circle {
+	
+  background: gray;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  transition: all .3s ease-in-out;
+}
+
+.circle:hover {
+	background: white;
+  border-radius:0;  
+  cursor: pointer;
+}
+
+.text1 {
+  color: black;
+  text-align: center;
+  padding-top: 50px;
+ 
+}
+
+
+
+#cc-slider {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 850px;
+    position:relative;
+}
+#cc-slider input {
+    display: none;
+}
+
+#cc-slides article img {
+    width: 100%;
+}
+#cc-slides .inner {
+   width: 500%;
+   line-height: 0;
+}
+#overflow {
+   width: 100%;
+   overflow: hidden;
+}
+#cc-slides article {
+   width: 20%;
+   float: left;
+}
+#slide1:checked ~ #cc-slides .inner { margin-left:0; }
+#slide2:checked ~ #cc-slides .inner { margin-left:-100%; }#controls {
+   margin: -8% 0 0 84%;
+   width: 15%;
+   height: 50px;
+}
+#controls label, a {
+   color: #ef023f;
+   cursor: pointer;
+   text-decoration: none;
+}
+#controls label { 
+   display: none;
+   width: 50px;
+   height: 50px;
+}
+#controls label:hover {
+    color: #ff0042 !important;
+}
+#controls label:hover {
+   opacity: 0.8;
+}
+#active {
+   margin: 23% 0 0;
+   text-align: center;
+}
+#active label {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   background: #f89e67;
+}
+#active label:hover {
+    background: #ccc;
+    border-color: #777 !important;
+}
+#slide3:checked ~ #cc-slides .inner { margin-left:-200%; }
+#slide4:checked ~ #cc-slides .inner { margin-left:-300%; }
+#slide5:checked ~ #cc-slides .inner { margin-left:-400%; }
+
+#slide1:checked ~ #controls label:nth-child(2), 
+#slide2:checked ~ #controls label:nth-child(3), 
+#slide3:checked ~ #controls label:nth-child(4), 
+#slide4:checked ~ #controls label:nth-child(5), 
+#slide5:checked ~ #controls label:nth-child(1) {
+	background: url('../images/next.png') no-repeat;
+	float: right;
+	display: block;
+	background-color:#ef023f;
+}
+#slide1:checked ~ #controls label:nth-child(5),
+#slide2:checked ~ #controls label:nth-child(1),
+#slide3:checked ~ #controls label:nth-child(2),
+#slide4:checked ~ #controls label:nth-child(3),
+#slide5:checked ~ #controls label:nth-child(4) {
+	background: url('../images/prev.png') no-repeat;
+	float: left;
+	display: block;
+	background-color:#ef023f;
+}
+
+.cctooltip {
+    color: #FFFFFF;
+    font-style: italic;
+    line-height: 20px;
+    margin-top: 250px;
+    opacity: 0;
+    position: absolute;
+    text-align: left;
+    -webkit-transform: translateZ(0);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+     
+     transition: all 0.3s ease-out;
+}
+.cctooltip h3 {
+	color: #FFFFFF;
+	margin: 0 0 5px;
+	font-weight: normal;
+	font-size: 16px;
+	font-style: normal;
+	background: none repeat scroll 0 0 #222222;
+	padding: 5px;
+}
+.cctooltip h4 {
+	color: #FFFFFF;
+	margin: 0 0 5px;
+	font-weight: normal;
+	font-size: 14px;
+	font-style: normal;
+	background: none repeat scroll 0 0 #222222;
+	padding: 5px;
+	text-align:right;
+	width:160px;
+}
+
+#cc-slides .inner {
+	-webkit-transform: translateZ(0);
+	-webkit-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+	-moz-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+	 
+	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000); /* easeInOutQuart */
+	
+	-webkit-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+	-moz-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+	 
+	transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); /* easeInOutQuart */
+}
+#cc-slider {
+	-webkit-transform: translateZ(0);
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+#controls label{
+	-webkit-transform: translateZ(0);
+	-webkit-transition: opacity 0.2s ease-out;
+	-moz-transition: opacity 0.2s ease-out;
+	
+	transition: opacity 0.2s ease-out;
+}
+#slide1:checked ~ #cc-slides article:nth-child(1) .cctooltip,
+#slide2:checked ~ #cc-slides article:nth-child(2) .cctooltip,
+#slide3:checked ~ #cc-slides article:nth-child(3) .cctooltip,
+#slide4:checked ~ #cc-slides article:nth-child(4) .cctooltip,
+#slide5:checked ~ #cc-slides article:nth-child(5) .cctooltip {
+	opacity: 1;
+	-webkit-transition: all 1s ease-out 0.6s;
+	-moz-transition: all 1s ease-out 0.6s;
+
+	transition: all 1s ease-out 0.6s;
+}
+	
+
+
+
+
+.text2 {
+	background-color: black;
+color:white;
+padding-top:700px;
+padding-bottom:30px;
+}
+	
+.column1 {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clearfix (clear floats) */
+.row3::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+.column2 {
+  float: left;
+ 
+}
+
+/* Left and right column */
+.column2.side {
+  width: 50%; 
+   padding-top:80px;
+}
+
+.column3 {
+  float: right; 
+}
+
+/* Middle column */
+.column3.middle {
+  width: 50%;
+  border-radius: 10px; 
+  padding-top:50px;
+}
+
+/* Clear floats after the columns */
+.row4:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+.container2 {  
+  margin: 20px;
+  max-width: 800px;
+  background-color: white;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+ .fixed-footer{
+        width: 100%;        
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+        bottom: 0;
+    }
+
+/* CONTACT US PAGE STARTS FROM HERE */
+
+.header {
+	color: white;
+}
+
+.header img {
+  float: left;
+   height: 15%;
+    width: 18%;
+	top:20px;
+	padding-left:30px;
+	padding-bottom:10px;
+  background: white;
+}
+
+.header h1 {
+  display: inline;
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+ 
+.nav {
+  overflow: hidden;
+    width: 100%;
+    height: 49px;
+  background-color: #e9e9e9;
+}
+
+.nav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 18px;
+  text-decoration: none;
+  font-size: 17px;
+ transition: 0.6s all;
+}
+
+.nav a:hover {
+  background-color: #2196F3 ;
+  color: white;
+}
+
+.nav .search {
+    float: right;
+}
+
+.nav input[type=text] {
+	
+    padding: 6px;
+	
+    margin-top: 8px;
+
+    border:none;
+
+    font-size: 17px;
+}
+
+.nav .search button {
+
+    float: right;
+
+    padding: 6px;
+
+    margin-top: 8px;
+
+    font-size: 17px;
+
+    margin-right: 16px;
+
+    border:none;
+
+    background-color: #2196F3;
+
+    cursor: pointer;
+
+    transition: 0.6s all;
+}
+
+.nav .search button:hover{
+
+    background-color: #ccc;
+
+    color: #fff;
+}
+
+.img {
+ 
+  /* Center and scale the image nicely */
+  background-position: top;
+	background-repeat: no-repeat;
+	position: relative;
+	background-image: url("images\bg.jpg");
+	background-color: #ddd;
+}
+
+/* Add styles to the form container */
+.container4 {
+ 
+  
+  margin: 20px;
+  max-width: 800px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+  input[type=text], input[type=password], textarea{
+  width: 100%;
+  max-width: 600px;
+  padding: 15px;
+  background: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+    margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+/* Set a style for the submit button */
+
+.btn {
+  border: 2px solid black;
+  border-radius: 6px;
+  background-color: white;
+  color: black;
+  padding: 10px 24px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Green */
+.success {
+  border-color: #4CAF50;
+  color: black;
+}
+
+.success:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.success:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+/* Create three unequal columns that floats next to each other */
+.column4 {
+  float: left; 
+}
+
+/* Left and right column */
+.column4.side {
+  width: 50%;
+  padding-top: 30px;
+  
+}
+
+.column5 {
+  float: right; 
+}
+
+/* Middle column */
+.column5.middle {
+  width: 50%;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+ padding-top:30px;
+}
+
+/* Clear floats after the columns */
+.row5:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+/* Footer */
+
+
+
+
+
+/* ABOUT US PAGE STARTS FROM HERE */
+
+
+.header {
+	color: white;
+}
+
+.header img {
+  float: left;
+   height: 15%;
+    width: 18%;
+	top:20px;
+	padding-left:30px;
+	padding-bottom:10px;
+  background: white;
+}
+
+.header h1 {
+  display: inline;
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+ 
+.nav {
+  overflow: hidden;
+    width: 100%;
+    height: 49px;
+  background-color: #e9e9e9;
+}
+
+.nav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 18px;
+  text-decoration: none;
+  font-size: 17px;
+ transition: 0.6s all;
+}
+
+.nav a:hover {
+  background-color: #2196F3 ;
+  color: white;
+}
+
+.nav .search {
+    float: right;
+}
+
+.nav input[type=text] {
+	
+    padding: 6px;
+	
+    margin-top: 8px;
+
+    border:none;
+
+    font-size: 17px;
+}
+
+.nav .search button {
+
+    float: right;
+
+    padding: 6px;
+
+    margin-top: 8px;
+
+    font-size: 17px;
+
+    margin-right: 16px;
+
+    border:none;
+
+    background-color: #2196F3;
+
+    cursor: pointer;
+
+    transition: 0.6s all;
+}
+
+.nav .search button:hover{
+
+    background-color: #ccc;
+
+    color: #fff;
+}
+
+
+
+.aboutimg {
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.abouttxt {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+
+
+/* Create three unequal columns that floats next to each other */
+.column6 {
+  float: right;
+  padding: 10px;
+  position: center;
+  text-align: left-side;
+  font-size: 120%;
+  font-family: Palatino Linotype;
+  line-height: 200%;
+}
+
+/* Left and right column */
+.column6.side {
+  width: 50%;
+}
+
+.row6:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+.column13 {
+  float: left;
+  position: center;
+  padding-left:50px;
+}
+
+.image7 {
+	width:400px;
+	height:400px;
+	float:left;
+}
+
+
+
+
+/* SERVICES PAGE STARTS FROM HERE */
+
+
+.header {
+	color: white;
+}
+
+.header img {
+  float: left;
+   height: 15%;
+    width: 18%;
+	top:20px;
+	padding-left:30px;
+	padding-bottom:10px;
+  background: white;
+}
+
+.header h1 {
+  display: inline;
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+ 
+.nav {
+  overflow: hidden;
+    width: 100%;
+    height: 49px;
+  background-color: #e9e9e9;
+}
+
+.nav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 18px;
+  text-decoration: none;
+  font-size: 17px;
+ transition: 0.6s all;
+}
+
+.nav a:hover {
+  background-color: #2196F3 ;
+  color: white;
+}
+
+.nav .search {
+    float: right;
+}
+
+.nav input[type=text] {
+	
+    padding: 6px;
+	
+    margin-top: 8px;
+
+    border:none;
+
+    font-size: 17px;
+}
+
+.nav .search button {
+
+    float: right;
+
+    padding: 6px;
+
+    margin-top: 8px;
+
+    font-size: 17px;
+
+    margin-right: 16px;
+
+    border:none;
+
+    background-color: #2196F3;
+
+    cursor: pointer;
+
+    transition: 0.6s all;
+}
+
+.nav .search button:hover{
+
+    background-color: #ccc;
+
+    color: #fff;
+}
+
+
+.banner {
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.column7 {
+  float: right;
+  padding-top:50px;
+  position: center;
+  text-align: left-side;
+  font-size: 120%;
+  font-family: Palatino Linotype;
+  line-height: 200%;
+}
+
+/* Left and right column */
+.column7.side {
+  width: 50%;
+  padding-right:30px;
+}
+
+.row7:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+.column12 {
+  float: left;
+  position: center;
+  padding-left:50px;
+}
+
+.image6 {
+	width:400px;
+	height:400px;
+	float:left;
+}
+
+.row8:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding-top:30px;
+}
+
+/* Six columns side by side */
+.column8 {
+  
+  padding-top:20px;
+  margin-left: 110px;
+  padding-left:20px;
+  float: left;
+}
+
+
+  .card {
+	    display: block;
+        
+        width: 300px;
+        height: 300px;
+        background:url(images/service%20images/evenetmanagement.jpg) no-repeat;
+      
+    }
+    .card:hover {
+        background:url(images/service%20images/Event-Management1.jpg) no-repeat;
+    }
+  
+  .card2 {
+	    
+        width: 300px;
+        height: 300px;
+        background:url(images/service%20images/eventinfrastructure.jpg) no-repeat;
+       
+    }
+    .card2:hover {
+        background:url(images/service%20images/eventinfrastructure1.jpg)no-repeat;
+    }
+
+ .card3 {
+	    
+        width: 300px;
+        height: 300px;
+        background:url(images/service%20images/hotel.jpg) no-repeat;
+        
+    }
+    .card3:hover {
+        background:url(images/service%20images/hotel1.jpg)no-repeat;
+    }
+	
+	.card4 {
+	    
+        width: 300px;
+        height: 300px;
+        background:url(images/service%20images/catering.jpg)no-repeat;
+        
+    }
+    .card4:hover {
+        background:url(images/service%20images/catering1.jpg)no-repeat;
+    }
+	
+	.card5 {
+	    
+        width: 300px;
+        height: 300px;
+        background:url(images/service%20images/branding.jpg) no-repeat;
+        
+    }
+    .card5:hover {
+        background:url(images/service%20images/advertise.jpg) no-repeat;
+    }
+	
+	.card6 {
+	    
+        width: 300px;
+        height: 300px;
+        background:url(images/service%20images/permision.jpg) no-repeat;
+        
+    }
+    .card6:hover {
+        background:url(images/service%20images/permision1.jpg) no-repeat;
+    }
+
+
+.fade {
+  color: white;
+  font-size: 25px;
+  padding-top: 60%;
+  padding-left:80%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.column10 {
+  float: left;
+ 
+}
+
+/* Left and right column */
+.column10.side {
+  width: 50%; 
+   padding-top:100px;
+}
+
+.column11 {
+  float: right; 
+}
+
+/* Middle column */
+.column11.middle {
+  width: 50%;
+  border-radius: 10px; 
+  padding-top:50px;
+}
+
+/* Clear floats after the columns */
+.row10:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+.container4 {  
+  margin: 20px;
+  max-width: 800px;
+  background-color: white;
+}
